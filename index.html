@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+  
+    <section class="max-w-md min-h-screen mx-auto
+    py-6 bg-gray-200">
+    <header>
+        <nav class="flex justify-center items-center mt-6">
+           <div class="mt-10 relative flex  justify-center items-center w-9/12 mb-10">
+            <img class="w-48 absolute" src="assets/bg.png" alt="">
+            <img class="w-16" src="assets/Group.png" alt="">
+           </div> 
+        </nav>
+    </header>
+
+    <!-- logging section -->
+    <div class="">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          
+          <div class="card bg-gray-200 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body bg-gray-200">
+              <fieldset class="fieldset">
+                <label  class="fieldset-label">Account Number</label>
+                <input value="01301628488" id="Account-number" type="number" class="input" placeholder="Type your account number" required />
+                <label  class="fieldset-label">PIN</label>
+                <input value="1234" id="pin" type="text" class="input" placeholder="Type your PIN" required/>
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
