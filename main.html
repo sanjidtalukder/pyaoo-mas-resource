@@ -24,11 +24,11 @@
         <p class="text-black font-medium">Enjoy easy and convernient financial services with us.
          Cashout chage is low and</p>
         <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
-            <div class="box border cursor-pointer p-4 text-center rounded-sm">
+            <div id="add-money-box" class="box border cursor-pointer p-4 text-center rounded-sm">
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <h3>Add Money</h3>
              </div>
-             <div class="box border cursor-pointer p-4 text-center rounded-sm">
+             <div id="cashout-box" class="box border cursor-pointer p-4 text-center rounded-sm">
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <h3>CashOut</h3>
              </div>
@@ -49,8 +49,9 @@
                 <h3>Transection History</h3>
              </div>
     </div>
-    <section>
-        <h2>Add money</h2>
+    <!-- Add money section start here  -->
+    <section id="addMoney">
+        <h2 class="p-2 m-3">Add money</h2>
         <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
               
@@ -72,19 +73,38 @@
                         <div><a class="link link-hover">Forgot password?</a></div>
                         <button id="add-money" class="btn btn-neutral bg-blue-700 border-none mt-4">Add Money</button>
                       </fieldset>
-
-                      
-                      <!-- video-27-4 -->
-                 
                 </form>
               </div>
             </div>
           </div>
     </section>
+     <!-- Add money section end here  -->
+
+      <!-- Cash mone section start here  -->
+
+    <section id="cashout">
+        <h2 class="m-3 p-2">Cash Out</h2>
+        <div class="card w-full p-2 m-3 max-w-sm shrink-0 shadow-2xl">            <fieldset class="fieldset">
+                <label  class="fieldset-label">Account Number</label>
+                <input value="01301628488" id="Account-number" type="number" class="input" placeholder="Type your account number" required />
+                <label  class="fieldset-label">Amount</label>
+                <input  id="cashOutAmount" type="number" max="11" class="input" placeholder="Type your Amount" required/>
+                <label  class="fieldset-label">PIN</label>
+                <input value="1234" id="cashOutPin" type="text" class="input" placeholder="Type your PIN" required/>
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="cashout-btn" class="btn btn-neutral bg-blue-700 border-none mt-4">Cashout</button>
+              </fieldset>
+        </div>
+        
+
+    </section>
+     <!-- Cash mone section end here  -->
          
     </section>
 </header>
    </section>
    <script src="addMoney.js"></script>
+   <script src="toggle.js"></script>
+   <script src="cashOut.js"></script>
 </body>
 </html>

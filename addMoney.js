@@ -11,7 +11,7 @@ if(convertedPin ===1234){
     const sum = convertedMainBlances + convertedAmmount;
     document.getElementById("main-blance").innerText = sum;
 }else{
-    console.log("pin thik na ")
+    alert("Enter valid PIN")
 }
-console.log(ammount)
+
 })
