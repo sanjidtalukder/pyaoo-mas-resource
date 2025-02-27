@@ -44,7 +44,7 @@
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <h3>Get Bonus</h3>
              </div>
-             <div class="box border cursor-pointer p-4 text-center rounded-sm">
+             <div id="transaction-box" class="box border cursor-pointer p-4 text-center rounded-sm">
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <h3>Transection History</h3>
              </div>
@@ -58,7 +58,7 @@
               <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body">
                     <legend>Select Bank</legend>
-                    <select class="select select-bordered w-full max-w-xs">
+                    <select id="allBank" class="select select-bordered w-full max-w-xs">
                         <option disabled selected>Choose bank name!</option>
                         <option value="Bkash">Bkash</option>
                         <option value="nagot">Nagot</option>
@@ -98,7 +98,17 @@
 
     </section>
      <!-- Cash mone section end here  -->
-         
+      <!-- Transaction hidtory section start here  -->
+         <section id="Transection-history">
+          <h1 class="text-3xl font-bold text-red-400 text-center p-3 m-2">Transaction History</h1>
+          <div id="transaction-container">
+
+          </div>
+
+
+         </section>
+               <!-- Transaction hidtory section start here  -->
+
     </section>
 </header>
    </section>
@@ -106,5 +116,6 @@
    <script src="toggle.js"></script>
    <script src="cashOut.js"></script>
    <script src="utlities.js"></script>
+   <script src="transectionHistory.js"></script>
 </body>
 </html>
